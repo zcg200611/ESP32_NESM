@@ -1,0 +1,32 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "local_ui.c"
+        "config_manager.c"
+        "sensor_service.c"
+        "display_service.c"
+       
+        "wifi_manager.c"
+        "mqtt_manager.c"
+        "ota_manager.c"
+        "../drivers/oled.c"
+        "../drivers/spi.c"
+        "../drivers/bme280.c"
+    INCLUDE_DIRS
+        "."
+        "../drivers"
+    REQUIRES
+        driver
+        esp_driver_gpio
+        esp_driver_spi
+        esp_driver_i2c
+        esp_wifi
+        esp_event
+        esp_netif
+        nvs_flash
+        mqtt
+        app_update
+        esp_http_client
+        esp_https_ota
+        mbedtls
+)
