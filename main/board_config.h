@@ -19,13 +19,13 @@
 #define APP_UI_POLL_PERIOD_MS       100
 
 /* -------------------- Wi-Fi 默认配置 -------------------- */
-#define WIFI_STA_SSID               "HONOR 500"
-#define WIFI_STA_PASSWORD           "8888888801"
+#define WIFI_STA_SSID               "YOUR_WIFI_SSID"
+#define WIFI_STA_PASSWORD           "YOUR_WIFI_PASSWORD"
 #define WIFI_CONNECT_TIMEOUT_MS     15000
 
 /* -------------------- OTA 配置 -------------------- */
 /* 本地测试 OTA 包地址（手动触发 OTA 时使用） */
-#define OTA_TEST_URL                "http://10.14.59.170:8000/ESP32_NEMN.bin"
+#define OTA_TEST_URL                "http://YOUR_SERVER/ESP32_NEMN.bin"
 
 /* 本地 UI 显示版本号 */
 #define APP_VERSION_STRING          "v1.1.1"
@@ -42,11 +42,11 @@
 #define MQTT_BROKER_URI             "mqtts://183.230.40.16:8883"
 */
 
-#define MQTT_PRODUCT_ID             "MHBUk4W90R"
-#define MQTT_DEVICE_NAME            "ESP32_NEMN"
-#define MQTT_CLIENT_ID              "ESP32_NEMN"
+#define MQTT_PRODUCT_ID             "YOUR_PRODUCT_ID"
+#define MQTT_DEVICE_NAME            "YOUR_DEVICE_NAME"
+#define MQTT_CLIENT_ID              "YOUR_DEVICE_NAME"
 #define MQTT_USERNAME               MQTT_PRODUCT_ID
-#define MQTT_PASSWORD               "version=2018-10-31&res=products%2FMHBUk4W90R%2Fdevices%2FESP32_NEMN&et=1903085940&method=md5&sign=JKqyWKvlx44ikGst7zdkbw%3D%3D"
+#define MQTT_PASSWORD               "YOUR_ONENET_TOKEN"
 
 /* -------------------- OneNET 属性相关主题 -------------------- */
 #define MQTT_TOPIC_PROPERTY_POST      "$sys/" MQTT_PRODUCT_ID "/" MQTT_DEVICE_NAME "/thing/property/post"
